@@ -9,4 +9,9 @@ public class IndexController {
 	public String index() {
 		return "hellokitty.html";
 	}
+	
+	@RequestMapping("/login")
+	public String login() {
+		return "/login";
+	}
 }
