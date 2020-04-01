@@ -2,22 +2,31 @@ package com.nan.hellokitty.pojo;
 
 public class User {
 	private String name;
-	private int age;
-	
-	public User(String name,int age) {
-		this.name = name;
-		this.age=age;
-	}
+	private String Region;
+	private Designation designation;
+
 	public String getName() {
 		return name;
 	}
+
 	public void setName(String name) {
 		this.name = name;
 	}
-	public int getAge() {
-		return age;
+
+	public String getRegion() {
+		return Region;
 	}
-	public void setAge(int age) {
-		this.age = age;
+
+	public void setRegion(String region) {
+		Region = region;
 	}
+
+	public Designation getDesignation() {
+		return designation;
+	}
+
+	public void setDesignation(Designation designation) {
+		this.designation = designation;
+	}
+
 }
