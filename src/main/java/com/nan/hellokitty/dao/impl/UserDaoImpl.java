@@ -21,13 +21,13 @@ public class UserDaoImpl implements UserDao {
 		this.jdbcTemplate = jdbcTemplate;
 	}
 
-	@Value("${querySQL}")
+	@Value("${dataconfig.querySQL}")
 	private String QUERYUSERBYNAME;
 
-	@Value("${insertUser}")
+	@Value("${dataconfig.insertUser}")
 	private String insertUser;
 
-	@Value("${insertDesignation}")
+	@Value("${dataconfig.insertDesignation}")
 	private String insertDesignation;
 
 	@Override

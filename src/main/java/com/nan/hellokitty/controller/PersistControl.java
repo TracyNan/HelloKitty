@@ -2,7 +2,6 @@ package com.nan.hellokitty.controller;
 
 import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.PropertySource;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -13,7 +12,6 @@ import com.nan.hellokitty.dao.UserDao;
 import com.nan.hellokitty.pojo.Designation;
 import com.nan.hellokitty.pojo.User;
 
-@PropertySource("classpath:config/config.properties")
 @ResponseBody
 @RestController
 public class PersistControl {
